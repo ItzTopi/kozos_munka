@@ -1,19 +1,35 @@
 main{
     background-color: blueviolet;
-    text-align: justify;
-
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "h h h"
+                        "n n n"
+                        "as ar as"
+                        "f f f";
 }
 header{
     text-align: center;
+    grid-area: h;
 }
 body{
     background-color: red;
     max-width: 1000px;
     margin: auto;
+    
 }
 img{
     width: 100%;
     border: 3px solid black;
-    
-
+}
+nav{
+    grid-area: n;
+}
+aside{
+    grid-area: as;
+}
+article{
+    grid-area: ar;
+}
+footer{
+    grid-area: f;
 }
