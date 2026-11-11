@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 main{
     background-color: blueviolet;
     text-align: justify;
@@ -7,8 +10,18 @@ main{
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: "h h h"
                         "n n n"
-                        "as ar as"
+                        "as1 ar as2"
                         "f f f";
+    gap: 20px;
+}
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
 }
 header{
     text-align: center;
@@ -27,8 +40,11 @@ img{
 nav{
     grid-area: n;
 }
-aside{
-    grid-area: as;
+.aside1{
+    grid-area: as1;
+}
+.aside2{
+    grid-area: as2;
 }
 article{
     grid-area: ar;
